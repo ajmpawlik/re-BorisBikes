@@ -13,8 +13,11 @@ describe DockingStation do
     it 'raises an error when there are no bikes available' do
       expect {subject.release_bike}.to raise_error 'No bikes available'
     end
+    it 'raises an error when there are all spaces (1) taken by bikes in the docking station' do
+      expect {subject.release_bike}.to raise_error 'Docking station full'
+    end
   end
-  
+
     it 'responds to dock method with one argument (bike)' do
       expect(subject).to respond_to(:dock).with(1).argument
     end
