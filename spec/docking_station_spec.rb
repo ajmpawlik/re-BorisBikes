@@ -6,9 +6,9 @@ describe DockingStation do
       expect(subject).to respond_to :release_bike
     end
     it 'releases a bike'do
-      bike = subject.release_bike
-      expect(bike).to be_working #the same as below, just different syntax
-      expect(bike.working?).to be true
+      bike = Bike.new
+      subject.dock(bike)
+      expect(subject.release_bike).to eq bike
     end
   end
     it 'responds to dock method with one argument (bike)' do
