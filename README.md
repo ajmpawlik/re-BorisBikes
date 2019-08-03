@@ -10,13 +10,13 @@ And, the coverage of the SimpleCov should not be commited but it is - to be solv
 .
 .
 
-Initialisation defaults
+__Initialisation defaults__
 
 As a system maintainer,
 So that busy areas can be served more effectively,
 I want to be able to specify a larger capacity when necessary.
 
-Dealing with broken bikes
+__Dealing with broken bikes__
 
 As a member of the public,
 So that I reduce the chance of getting a broken bike in future,
