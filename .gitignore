@@ -1,1 +1,2 @@
-coverage
+# Ignore SipleCov test coverage
+/coverage

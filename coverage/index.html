@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-28T19:17:06+01:00">2019-07-28T19:17:06+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-08-03T14:26:27+01:00">2019-08-03T14:26:27+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.5%</span></span>
+    (<span class="covered_percent"><span class="green">98.18%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.76
+         4.35
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>4</b> files in total.
-    <b>40</b> relevant lines. 
-    <span class="green"><b>39</b> lines covered</span> and
+    <b>5</b> files in total.
+    <b>55</b> relevant lines. 
+    <span class="green"><b>54</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,11 +63,11 @@
       <tr>
         <td class="strong"><a href="#a36b0c72d3dc267aceac14e7e53edf89c6a679a0" class="src_link" title="lib/docking_station.rb">lib/docking_station.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>21</td>
-        <td>11</td>
-        <td>11</td>
+        <td>31</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
-        <td>5.5</td>
+        <td>9.9</td>
       </tr>
       
       <tr>
@@ -88,6 +88,16 @@
         <td>22</td>
         <td>0</td>
         <td>2.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0ac7939db3912cbe2c4c044ce3ae7f59746ce94c" class="src_link" title="spec/feature_spec.rb">spec/feature_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>13</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>3.1</td>
       </tr>
       
     </tbody>
@@ -160,8 +170,8 @@
     <h3>lib/docking_station.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -190,7 +200,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">attr_reader :bike</code>
+          <code class="ruby">attr_reader :bike #shouldn&#39;t it be bikes since the code has been refactored?</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -199,8 +209,8 @@
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="6">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="6">
+          <span class="hits">8</span>
           
           <code class="ruby">    @bikes = []</code>
         </li>
@@ -223,14 +233,14 @@
           <code class="ruby">  def release_bike</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
-          <code class="ruby">    fail &#39;No bikes available&#39; if @bikes.empty?</code>
+          <code class="ruby">    fail &#39;No bikes available&#39; if empty?</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
           <code class="ruby">    @bikes.pop</code>
         </li>
@@ -253,14 +263,14 @@
           <code class="ruby">  def dock(bike)</code>
         </li>
       
-        <li class="covered" data-hits="23" data-linenumber="15">
-          <span class="hits">23</span>
+        <li class="covered" data-hits="45" data-linenumber="15">
+          <span class="hits">45</span>
           
-          <code class="ruby">    fail &#39;Docking station full&#39; if @bikes.count &gt;= 20</code>
+          <code class="ruby">    fail &#39;Docking station full&#39; if full?</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="16">
-          <span class="hits">22</span>
+        <li class="covered" data-hits="43" data-linenumber="16">
+          <span class="hits">43</span>
           
           <code class="ruby">    @bikes &lt;&lt; bike</code>
         </li>
@@ -290,6 +300,66 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def empty?</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="25">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @bikes.empty?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def full?</code>
+        </li>
+      
+        <li class="covered" data-hits="45" data-linenumber="29">
+          <span class="hits">45</span>
+          
+          <code class="ruby">    @bikes.count &gt;= 20</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">end</code>
@@ -580,6 +650,103 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="0ac7939db3912cbe2c4c044ce3ae7f59746ce94c">
+  <div class="header">
+    <h3>spec/feature_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;./lib/docking_station&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;./lib/bike&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &#39;feature test&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;checks the steps within the feature&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    docking_station = DockingStation.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bike = Bike.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    p docking_station.dock(bike)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    p docking_station.release_bike</code>
+        </li>
+      
+        <li class="covered" data-hits="21" data-linenumber="10">
+          <span class="hits">21</span>
+          
+          <code class="ruby">    20.times {docking_station.dock(bike)}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    expect {docking_station.dock(bike)}.to raise_error &#39;Docking station full&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
